@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact FreshFit</title>
+style.css
+</head>
+<body>
+
+<header>
+    <h1>FreshFit</h1>
+</header>
+
+<nav>
+    <a href="index.html">  products.htmlProducts</a>
+    <a ut.htmlAbout</a>
+    <a href="contactact</a>
+</nav>
+
+<div class="container">
+
+<div class="contact-section">
+
+<img
+class="contact-image"
+src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200"
+alt="Customer Support">
+
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+
+    <input type="email" placeholder="Your Email" required>
+
+    <input type="tel" placeholder="Phone Number">
+
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+
+   v id="message"></div>
+
+</div>
+
+</div>
+
+<footer>
+    <p>© 2026 FreshFit. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    document.getElementById("message").innerHTML =
+    "<p style='color:green;margin-top:20px;'>✅ Thank you! Your message has been sent.</p>";
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>
